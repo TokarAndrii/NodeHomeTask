@@ -1,3 +1,7 @@
+/*
+Http сервер, который принимает запросы вида /name и
+выдает Hello, name
+*/
 const http = require('http');
 http.createServer((req, res) => {
     const nameWithSlash = req.url;
